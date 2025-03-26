@@ -5,7 +5,6 @@
     box-sizing: border-box;
 }
 
-/* Apply animated gradient to the body */
 body {
     background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
     background: -moz-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
@@ -122,22 +121,17 @@ body {
 }
 
 .last-updated {
-    background-color: green; /* Green background */
-    color: white; /* White text for contrast */
-    padding: 10px; /* Add some padding inside the box */
-    border-radius: 5px; /* Slightly rounded corners */
-    font-size: 14px; /* Adjust the font size */
-    display: inline-block; /* Keep the box size tight around the text */
+    background-color: green; 
+    color: white; 
+    padding: 10px; 
+    border-radius: 5px; 
+    font-size: 14px;
+    display: inline-block;
     margin-right: 10%;
     margin-bottom: 3%;
 }
 
-/* Hover effect for all buttons */
-/* Common styles for all buttons */
-/* General button styling */
-/* General button styling */
-/* General button styling */
-/* General Button Styles */
+
 button {
     position: relative;
     font-size: 18px;
@@ -148,22 +142,22 @@ button {
     cursor: pointer;
     font-family: Arial, sans-serif;
     text-align: center;
-    overflow: hidden; /* Ensure hover text doesn't overflow */
+    overflow: hidden; 
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* Hide the button text on hover */
+
 button span {
     transition: opacity 0.3s ease-in-out;
 }
 
 button:hover span {
-    opacity: 0; /* Hide the button text on hover */
+    opacity: 0; 
 }
 
-/* Add hover content for newfloor0 */
+
 button.newfloor0::after {
-    content: "88 people"; /* Display on hover */
+    content: "88 people"; 
     position: absolute;
     left: 50%;
     top: 50%;
@@ -171,15 +165,15 @@ button.newfloor0::after {
     font-size: 24px;
     font-weight: bold;
     color: black;
-    opacity: 0; /* Initially hidden */
+    opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
 
 button.newfloor0:hover::after {
-    opacity: 1; /* Show hover content */
+    opacity: 1; 
 }
 
-/* Add hover content for newfloor1 */
+
 button.newfloor1::after {
     content: "55 people";
     position: absolute;
@@ -197,7 +191,7 @@ button.newfloor1:hover::after {
     opacity: 1;
 }
 
-/* Add hover content for newfloor2 */
+
 button.newfloor2::after {
     content: "25 people";
     position: absolute;
@@ -215,7 +209,7 @@ button.newfloor2:hover::after {
     opacity: 1;
 }
 
-/* Add hover content for oldfloor0 */
+
 button.oldfloor0::after {
     content: "75 people";
     position: absolute;
@@ -233,7 +227,7 @@ button.oldfloor0:hover::after {
     opacity: 1;
 }
 
-/* Add hover content for oldfloor1 */
+
 button.oldfloor1::after {
     content: "50 people";
     position: absolute;
@@ -251,11 +245,9 @@ button.oldfloor1:hover::after {
     opacity: 1;
 }
 
-/* No hover effect for menu */
 button.menu:hover span {
-    opacity: 1; /* Do not hide the menu text */
+    opacity: 1; 
 }
-
 button.menu::after {
-    content: ""; /* No hover content */
+    content: "";
 }
